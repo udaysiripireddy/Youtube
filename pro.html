@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Course - YouTube Style</title>
+  <link rel="stylesheet" href="pro.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">SkillCourses</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Courses..." />
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="profile">
+      <img src="https://via.placeholder.com/40" alt="Profile" class="profile-img" />
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Left Column (Video Player) -->
+    <div class="video-player">
+      <iframe src="https://www.youtube.com/embed/VlPiVmYuoqw&t" frameborder="0" allowfullscreen></iframe>
+      <div class="video-info">
+        <h1 class="video-title">Learn Full Stack Development</h1>
+        <div class="video-meta">
+          <span>15 Videos</span>
+          <span>Beginner</span>
+          <span>10 hours</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column (Scrollable Content) -->
+    <div class="right-content">
+      <!-- Video List -->
+      <div class="section video-list">
+        <h3>Course Videos</h3>
+        <div class="video-card">
+          <img src="https://via.placeholder.com/120x80" alt="Thumbnail" />
+          <div class="video-details">
+            <h4>Introduction to Full Stack</h4>
+            <p>Duration: 15:30</p>
+          </div>
+          <button class="complete-btn">Mark as Completed</button>
+        </div>
+        <!-- Add more video cards as needed -->
+
+      </div>
+
+      <!-- Notes Section -->
+      <div class="section notes">
+        <h3>Your Notes</h3>
+        <textarea placeholder="Add your notes here..."></textarea>
+        <button class="save-notes">Save Notes</button>
+      </div>
+
+      <!-- Progress Tracker -->
+      <div class="section progress">
+        <h3>Progress</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 50%;"></div>
+        </div>
+        <p>50% Completed</p>
+      </div>
+      <section class="rate-course">
+        <h2>Rate this Course</h2>
+        <select id="course-rating">
+          <option value="">Select Rating</option>
+          <option value="1">1 Star</option>
+          <option value="2">2 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="5">5 Stars</option>
+        </select>
+        <button id="submit-rating">Submit Rating</button>
+      </section>
+    </div>
+
+  </div>
+
+
+  <script src="pro.js"></script>
+</body>
+
+</html>
